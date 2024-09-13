@@ -1,0 +1,11 @@
+name: pocket-js
+
+services:
+  pg:
+    image: bitnami/postgresql:13.16.0
+    ports:      
+      - "5432:5432"
+    environment:
+      - POSTGRES_USERNAME=postgres
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=inorbit 
